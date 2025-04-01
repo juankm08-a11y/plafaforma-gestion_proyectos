@@ -118,8 +118,8 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-100">
-      <nav className="bg-gradient-to-r from-yellow-300 to-amber-400 shadow-lg">
+    <main className="min-h-screen bg-gray-200">
+      <nav className="bg-gradient-to-r from-orange-300 to-amber-400 shadow-lg">
         <section className="max-w-7xl mx-auto px-4">
           <section className="flex items-center space-x-6">
             <a
