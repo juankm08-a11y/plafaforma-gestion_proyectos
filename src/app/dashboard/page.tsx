@@ -211,7 +211,7 @@ export default function Home() {
           <aside className="flex items-start justify-start">
             <input
               type="text"
-              className=" border border-green-300 rounded-l px-4 py-2 w-[750px] focus:outline-none focus:ring-2 focus:ring-amber-400 "
+              className=" border border-green-300 rounded-l bg-cyan-200 px-4 py-2 w-[750px] focus:outline-none focus:ring-2 focus:ring-amber-400 "
               placeholder="Search your proyects..."
               value={searchTerm || ""}
               onChange={handleChange}
