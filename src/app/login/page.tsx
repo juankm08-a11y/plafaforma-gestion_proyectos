@@ -53,7 +53,7 @@ export default function Page() {
   };
 
   return (
-    <main className="flex items-center justify-center w-screen h-screen bg-gray-50">
+    <main className="flex items-center justify-center w-screen h-screen bg-amber-200">
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
         <h1 className="text-center text-3xl font-bold mb-6">LOGIN FORM</h1>
         {error && <p className="mb-4 text-center text-red-500">{error}</p>}

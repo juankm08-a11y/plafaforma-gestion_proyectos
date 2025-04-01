@@ -21,7 +21,7 @@ export default function Page() {
     }
   };
   return (
-    <main className="min-h-screen bg-gray-50 flex items-center justify-center">
+    <main className="min-h-screen bg-orange-200 flex items-center justify-center">
       <section className="bg-white shadow-md rounded-lg p-8 max-w-3xl w-full">
         <h3 className="text-3xl font-bold text-gray-900 mb-4">
           Create a New Proyect

@@ -72,7 +72,7 @@ export default function Page() {
   };
 
   return (
-    <main className="flex w-screen h-screen justify-center items-center bg-gray-50">
+    <main className="flex w-screen h-screen justify-center items-center bg-cyan-200">
       <section className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
         <h1 className="text-3xl font-bold mb-6 text-center">REGISTER FORM</h1>
         {error && <p className="mb-4 text-center textex-red-500">{error}</p>}
