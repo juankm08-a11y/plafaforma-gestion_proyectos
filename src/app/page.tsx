@@ -12,11 +12,11 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 py-24 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-6xl font-bold text-blue-800 mb-6">
-            Start Managing Your Projects
+            Start Managing Your Proyects
           </h1>
           <p className="text-3xl text-green-600 mb-8">
             Our platform provides you with the essential tools to manage,
-            collaborate, and succeed in all your web projects.
+            collaborate, and succeed in all your web proyects.
           </p>
           <section className="flex justify-center gap-4 mb-12">
             <button
