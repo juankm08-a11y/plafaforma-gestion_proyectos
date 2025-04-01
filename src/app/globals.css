@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --primary: 220 68% 42%;
+  --primary-foreground: 208 94% 87%;
+  --text-h: 220 55% 21%;
+  --success: 142 71% 45%;
+  --danger: 0 84% 60%;
+  --secondary: 9 86% 82;
+  --accent: 0 85% 60%;
+  --accent-foreground: 0 85% 100%;
+}
+
+@theme inline {
+  --color-app-primary: hsl(var(--primary));
+  --color-app-primary-foreground: hsl(var(--primary-foreground));
+  --color-app-text-h: hsl(var(--text-h));
+  --color-app-success: hsl(var(--success));
+  --color-app-danger: hsl(var(--danger));
+
+  --color-jmvf-50: #f0f9ff;
+  --color-jmvf-100: #e0f2fe;
+  --color-jmvf-200: #bae6fd;
+  --color-jmvf-300: #7dd3fc;
+  --color-jmvf-400: #38bdf8;
+  --color-jmvf-500: #0ea5e9;
+  --color-jmvf-600: #0284c7;
+  --color-jmvf-700: #0369a1;
+  --color-jmvf-800: #075985;
+  --color-jmvf-900: #0c4a6e;
+  --color-jmvf-950: #082f49;
+}
