@@ -194,7 +194,7 @@ export default function Home() {
           </section>
         </section>
       </nav>
-      <section>
+      <section className="bg-[url('background2.jpg')] bg-cover">
         <section className="max-w-7xl mx-auto px-4 mt-8">
           <aside className="flex items-center justify-between">
             <h2 className="text-2xl font-semibold text-gray-700">

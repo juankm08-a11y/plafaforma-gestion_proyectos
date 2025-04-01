@@ -8,7 +8,7 @@ export default function Home() {
     router.push("/");
   }, [router]);
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 bg-[url('background.jpg')]">
+    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 bg-[url('background.jpg')] bg-cover">
       <section className="max-w-7xl mx-auto px-4 py-24 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-6xl font-bold text-blue-800 mb-6">
