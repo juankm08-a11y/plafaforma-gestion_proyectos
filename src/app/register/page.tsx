@@ -20,7 +20,9 @@ export default function Page() {
   });
   const { name, email, password, confirmPassword } = formData;
 
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState<
+    { name: string; email: string; password: string }[]
+  >([]);
   const [error, setError] = useState("");
   const [redirecting, setRedirecting] = useState(false);
 
@@ -38,7 +40,7 @@ export default function Page() {
     }
   }, [redirecting, router]);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -46,7 +48,7 @@ export default function Page() {
     }));
   };
 
-  const handleRegister = (e) => {
+  const handleRegister = (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
 
