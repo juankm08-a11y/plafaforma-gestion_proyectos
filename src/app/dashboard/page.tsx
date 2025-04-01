@@ -198,7 +198,7 @@ export default function Home() {
         <section className="max-w-7xl mx-auto px-4 mt-8">
           <aside className="flex items-center justify-between">
             <h2 className="text-2xl font-semibold text-gray-700">
-              Mi Primer Plataforma
+              My Plataform
             </h2>
             <a
               href="/proyects"
