@@ -13,12 +13,16 @@ export default function Page() {
         <hr className="my-4 border-gray-300" />
       </section>
       <section className="grid grid-cols-1 gap-4 mb-12">
-        <button
-          onClick={() => router.push("/buydomain")}
-          className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105"
-        >
-          Buy domain
-        </button>
+        <section className="max-w-7xl mx-auto px-4 mb-8">
+          <aside className="flex items-start justify-start">
+            <button
+              onClick={() => router.push("/buydomain")}
+              className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105"
+            >
+              Buy domain
+            </button>
+          </aside>
+        </section>
       </section>
     </main>
   );

@@ -10,7 +10,9 @@ export default function page() {
         <hr className="my-4 border-gray-300" />
       </section>
       <section className="flex justify-center gap-4 mb-12">
-        <CircleStackIcon />
+        <aside className="flex items-start justify-start">
+          <CircleStackIcon className="w-5 h-5" />
+        </aside>
       </section>
     </main>
   );
