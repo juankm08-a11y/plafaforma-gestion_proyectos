@@ -15,8 +15,8 @@ export default function RootLayout({
 
   return (
     <html lang="es">
-      <body className="bg-app-accent-foreground">
-        <h1 className="p-4 bg-white text-gray-900 text-center">{pageTitle}</h1>
+      <body className="bg-app-accent-foreground bg-amber-300">
+        <h1 className="p-4 text-gray-900 text-center">{pageTitle}</h1>
         <p className="mt-2 text-lg text-gray-700 text-center">
           {metadata.description}
         </p>
