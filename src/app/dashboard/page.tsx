@@ -56,7 +56,7 @@ export default function Home() {
       case "domain":
         router.push("/domain");
         break;
-      case "clone":
+      case "store":
         router.push("/store");
         break;
       default:
