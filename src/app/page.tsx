@@ -8,13 +8,13 @@ export default function Home() {
     router.push("/");
   }, [router]);
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
+    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 bg-[url('background.jpg')]">
       <section className="max-w-7xl mx-auto px-4 py-24 text-center">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-6xl font-bold text-blue-800 mb-6">
             Start Managing Your Projects
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-3xl text-green-600 mb-8">
             Our platform provides you with the essential tools to manage,
             collaborate, and succeed in all your web projects.
           </p>
@@ -33,21 +33,28 @@ export default function Home() {
             </button>
           </section>
           <div className="mt-16 border-t-2 border-gray-200 pt-12">
-            <h3 className="text-sm font-semibold text-gray-500 tracking-wide uppercase mb-6">
+            <h3 className="text-2xl font-bold text-white tracking-wide uppercase mb-6">
               Develop with your favorite tools
             </h3>
           </div>
           <section className="grid grid-cols-3 gap-8">
-            {["React", "NodeJs", "Python", "Git", "Docker", "AWS"].map(
-              (tool) => (
-                <section
-                  key={tool}
-                  className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <span className="text-gray-900 font-medium">{tool}</span>
-                </section>
-              )
-            )}
+            {[
+              "React",
+              "NodeJs",
+              "Python",
+              "Angular",
+              "Java",
+              "JavaScript",
+              "PHP",
+              "TypeScript",
+            ].map((tool) => (
+              <section
+                key={tool}
+                className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              >
+                <span className="text-gray-900 font-medium">{tool}</span>
+              </section>
+            ))}
           </section>
         </div>
       </section>

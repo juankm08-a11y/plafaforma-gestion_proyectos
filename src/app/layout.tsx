@@ -11,9 +11,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pageTitle = typeof metadata.title === "string" ? metadata.title : "";
+
   return (
     <html lang="es">
-      <body className="bg-app-accent-foreground">{children}</body>
+      <body className="bg-app-accent-foreground">
+        <h1 className="p-4 bg-white text-gray-900">{pageTitle}</h1>
+        <p className="mt-2 text-lg text-gray-700">{metadata.description}</p>
+      </body>
+      <header>{children}</header>
     </html>
   );
 }
