@@ -6,38 +6,38 @@ import { useState } from "react";
 
 export default function Home() {
   const router = useRouter();
-  const Projects = [
+  const Proyects = [
     {
-      name: "Project 1",
-      description: "this is project 1",
+      name: "Proyect 1",
+      description: "this is proyect 1",
     },
     {
-      name: "Project 2",
-      description: "this is project 2",
+      name: "Proyect 2",
+      description: "this is proyect 2",
     },
     {
-      name: "Project 3",
-      description: "this is project 3",
+      name: "Proyect 3",
+      description: "this is proyect 3",
     },
     {
-      name: "Project 4",
-      description: "this is project 4",
+      name: "Proyect 4",
+      description: "this is proyect 4",
     },
     {
-      name: "Project 5",
-      description: "this is project 5",
+      name: "Proyect 5",
+      description: "this is proyect 5",
     },
     {
-      name: "Project 6",
-      description: "this is project 6",
+      name: "Proyect 6",
+      description: "this is proyect 6",
     },
     {
-      name: "Project 7",
-      description: "this is project 7",
+      name: "Proyect 7",
+      description: "this is proyect 7",
     },
   ];
 
-  interface Project {
+  interface Proyect {
     name: string;
     description: string;
   }
@@ -71,41 +71,41 @@ export default function Home() {
   };
 
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredSuggestions, setFilteredSuggestions] = useState<Project[]>([]);
+  const [filteredSuggestions, setFilteredSuggestions] = useState<Proyect[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const [searchResults, setSearchResults] = useState(Projects);
+  const [searchResults, setSearchResults] = useState(Proyects);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setSearchTerm(value);
 
     if (value.trim().length > 0) {
-      const filtered = Projects.filter((project) =>
-        project.name.toLowerCase().includes(value.toLowerCase())
+      const filtered = Proyects.filter((proyect) =>
+        proyect.name.toLowerCase().includes(value.toLowerCase())
       );
       setFilteredSuggestions(filtered);
       setShowSuggestions(true);
     } else {
       setFilteredSuggestions([]);
       setShowSuggestions(false);
-      setSearchResults(Projects);
+      setSearchResults(Proyects);
     }
   };
 
   const handleSearch = () => {
     if (!searchTerm.trim()) {
-      setSearchResults(Projects);
+      setSearchResults(Proyects);
       return;
     }
 
-    const results = Projects.filter((project) =>
-      project.name.toLowerCase().includes(searchTerm.toLowerCase())
+    const results = Proyects.filter((proyect) =>
+      proyect.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setSearchResults(results);
     setShowSuggestions(false);
   };
 
-  const handleSelectSuggestion = (suggestion: Project) => {
+  const handleSelectSuggestion = (suggestion: Proyect) => {
     setSearchTerm(suggestion.name);
     setSearchResults([suggestion]);
     setShowSuggestions(false);
@@ -158,7 +158,7 @@ export default function Home() {
               onClick={toogleDropdown}
               className="flex items-center text-gray-700 hover:text-gray-900 focus:outline-none"
             >
-              <span className="mr-1">Add New Project</span>
+              <span className="mr-1">Add New Proyect</span>
               <ChevronDownIcon className="w-5 h-5" />
             </button>
             {showDropdown && (
@@ -169,7 +169,7 @@ export default function Home() {
                       onClick={() => handleOptionClick("build")}
                       className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-                      Build Project
+                      Build Proyect
                     </button>
                   </li>
                   <li>
