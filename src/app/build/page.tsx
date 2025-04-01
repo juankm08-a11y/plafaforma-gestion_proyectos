@@ -13,7 +13,7 @@ const templates = [
   { name: "E-commerce", type: "Template" },
 ];
 
-export default function page() {
+export default function Page() {
   const [repoSearch, setRepoSearch] = useState("");
   const [templateSearch, setTemplateSearch] = useState("");
 
