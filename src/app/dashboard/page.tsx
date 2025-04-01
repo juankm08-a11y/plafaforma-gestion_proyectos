@@ -51,13 +51,13 @@ export default function Home() {
   const handleOptionClick = (option: string) => {
     switch (option) {
       case "build":
-        router.push("/projects/build");
+        router.push("/build");
         break;
-      case "import":
-        router.push("/projects/import");
+      case "domain":
+        router.push("/domain");
         break;
       case "clone":
-        router.push("/projects/clone");
+        router.push("/store");
         break;
       default:
         break;
@@ -174,18 +174,18 @@ export default function Home() {
                   </li>
                   <li>
                     <button
-                      onClick={() => handleOptionClick("import")}
+                      onClick={() => handleOptionClick("domain")}
                       className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-                      Import Repo
+                      Buy Domain
                     </button>
                   </li>
                   <li>
                     <button
-                      onClick={() => handleOptionClick("clone")}
+                      onClick={() => handleOptionClick("store")}
                       className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-                      Clone Template
+                      Store
                     </button>
                   </li>
                 </ul>
