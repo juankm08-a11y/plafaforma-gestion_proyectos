@@ -22,7 +22,7 @@ export default function Page() {
   );
 
   const filteredTemplates = templates.filter((template) =>
-    template.name.toLowerCase().includes(repoSearch.toLowerCase())
+    template.name.toLowerCase().includes(templateSearch.toLowerCase())
   );
 
   return (
