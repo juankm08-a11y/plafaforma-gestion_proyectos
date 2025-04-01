@@ -103,7 +103,7 @@ export default function Page() {
         </div>
         <div className="text-center mt-4">
           <a href="/register" className="text-blue hover:text-blue-500">
-            Don't have an account?
+            Donapos;t have an account?
           </a>
         </div>
       </div>

@@ -17,7 +17,7 @@ export default function Page() {
             Get in Touch With Us
           </h1>
           <p className="text-xl text-gray-600">
-            We're here to help and answer any questions you might have.
+            We are here to help and answer any questions you might have.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
