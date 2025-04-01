@@ -1,12 +1,9 @@
 import React from "react";
 
-export default function page() {
+export default function Page() {
   return (
-    <main className="flex justify-center items-center w-screen h-screen bg-gray-200">
-      <section className="text-xl grid grid-cols-2">
-        <h1>Storage</h1>
-      </section>
-      <p>This is a Page store</p>
-    </main>
+    <div className="flex bg-amber-200 justify-center items-center ">
+      <h1 className="text-xl">Store</h1>
+    </div>
   );
 }
