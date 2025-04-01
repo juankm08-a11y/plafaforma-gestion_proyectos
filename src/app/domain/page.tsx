@@ -1,6 +1,6 @@
 export default function page() {
   return (
-    <main className=" flex justify-center items-centerbg-amber-100">
+    <main className=" flex justify-center items-center bg-amber-100">
       <h1 className="text-xl">Domain</h1>
     </main>
   );
