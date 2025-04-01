@@ -1,3 +1,5 @@
+import { CircleStackIcon } from "@heroicons/react/20/solid";
+
 export default function page() {
   return (
     <main className=" flex justify-center items-center bg-amber-100">
@@ -6,6 +8,9 @@ export default function page() {
           <h2 className="text-2xl font-semibold text-gray-700">Store</h2>
         </aside>
         <hr className="my-4 border-gray-300" />
+      </section>
+      <section className="flex justify-center gap-4 mb-12">
+        <CircleStackIcon />
       </section>
     </main>
   );

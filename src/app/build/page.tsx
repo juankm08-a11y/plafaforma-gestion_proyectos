@@ -7,6 +7,9 @@ export default function page() {
         </aside>
         <hr className="my-4 border-gray-300" />
       </section>
+      <section className="flex justify-center gap-4 mb-12">
+        Import Git Repository
+      </section>
     </main>
   );
 }
