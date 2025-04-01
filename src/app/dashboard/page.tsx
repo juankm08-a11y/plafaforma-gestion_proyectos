@@ -37,13 +37,18 @@ export default function Home() {
     },
   ];
 
+  interface Project {
+    name: string;
+    description: string;
+  }
+
   const [showDropdown, setShowDropdown] = useState(false);
 
   const toogleDropdown = () => {
     setShowDropdown((prev) => !prev);
   };
 
-  const handleOptionClick = (option) => {
+  const handleOptionClick = (option: string) => {
     switch (option) {
       case "build":
         router.push("/projects/build");
@@ -66,11 +71,11 @@ export default function Home() {
   };
 
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredSuggestions, setFilteredSuggestions] = useState([]);
+  const [filteredSuggestions, setFilteredSuggestions] = useState<Project[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [searchResults, setSearchResults] = useState(Projects);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setSearchTerm(value);
 
@@ -100,13 +105,13 @@ export default function Home() {
     setShowSuggestions(false);
   };
 
-  const handleSelectSuggestion = (suggestion) => {
+  const handleSelectSuggestion = (suggestion: Project) => {
     setSearchTerm(suggestion.name);
     setSearchResults([suggestion]);
     setShowSuggestions(false);
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       handleSearch();
     }
