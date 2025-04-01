@@ -1,7 +1,9 @@
 export default function page() {
   return (
     <main className=" flex justify-center items-center bg-amber-100">
-      <h1 className="text-xl">Domain</h1>
+      <section className="display grid-template-columns">
+        <button className="w-[601px]">Buy</button>
+      </section>
     </main>
   );
 }
