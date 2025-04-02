@@ -50,8 +50,8 @@ export default function Home() {
 
   const handleOptionClick = (option: string) => {
     switch (option) {
-      case "build":
-        router.push("/build");
+      case "construction":
+        router.push("/construction");
         break;
       case "domain":
         router.push("/domain");
@@ -166,7 +166,7 @@ export default function Home() {
                 <ul className="py-1">
                   <li>
                     <button
-                      onClick={() => handleOptionClick("build")}
+                      onClick={() => handleOptionClick("construction")}
                       className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
                       Build Proyect
