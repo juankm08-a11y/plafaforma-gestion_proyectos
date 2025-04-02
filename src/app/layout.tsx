@@ -20,8 +20,8 @@ export default function RootLayout({
         <p className="mt-2 text-gray-700 text-center text-2xl">
           {metadata.description}
         </p>
+        <header>{children}</header>
       </body>
-      <header>{children}</header>
     </html>
   );
 }
